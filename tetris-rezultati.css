@@ -1,0 +1,26 @@
+body {
+    background-color: #3F314E;
+    margin: auto;
+}
+
+h1 {
+    color: lightgray;
+    text-align: center;
+}
+
+h2 {
+    color: lightgray;
+    text-align: center;
+}
+
+table {
+    color: lightgray;
+    text-align: justify;
+    height: 200px;
+}
+
+button {
+    background-color: #3F314E;
+    color: lightgray;
+    font-family: Arial, Helvetica, sans-serif;
+}

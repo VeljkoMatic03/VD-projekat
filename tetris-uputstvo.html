@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Uputstvo</title>
+    <link rel="stylesheet" href="tetris-dodatno/css/bootstrap.min.css">
+    <script src = "tetris-dodatno/js/bootstrap.min.js"></script>
+    <script src = "tetris-dodatno/jquery-3.6.4.min.js"></script>
+    <link rel="stylesheet" href="tetris-uputstvo.css">
+    <script src="tetris-uputstvo.js"></script>
+</head>
+<body>
+    <div class="container">
+        <h1>UPUTSTVO</h1>
+        <hr>
+        <div class="row">
+            <div class="col-sm-6">
+                <h2>Cilj igre</h2>
+                <p>Cilj igre je postaviti blokove koji padaju tako da se formiraju horizontalne linije bez praznina. Kada se formira jedna takva linija,
+                    ona nestaje i korisniku se zadaje određeni broj poena. Potrebno je da korisnik preživi što duže, kako bi sakupio
+                    što više poena.
+                </p>
+                <h2>Kako igrati</h2>
+                <p>Igrač ima opciju da pomera figure u levo, u desno, da ih rotira u smeru kazaljke na satu, i da ih spušta na dole.
+                    To može činiti strelicama na tastaturi, gde se rotacija vrši strelicom na gore, ili koristeći dugmiće na stranici 
+                    za igru. Figura se pomera na dole u vremenskom intervalu koji određuje nivo igre, ukoliko je igrač ne pomeri sam.
+                </p>
+                <h2>Sistem bodovanja</h2>
+                <p>Inicijalno jedna horitontalna linija vredi 100 poena, ali svaka sledeća uzastopna vredi duplo više, tako da je 
+                    efektivno maksimalan broj poena koje korisnik može osvojiti pri jednom potezu 800. Takođe svaki put kada korisnik 
+                    odluči da želi sam da pomeri figuru za jedno mesto dole, dodeljuje mu se jedan poen.
+                </p>
+                <h2>Nivoi</h2>
+                <p>Postoje početna tri nivoa, koji se razlikuju po tome kojom brzinom padaju figure. Kod nivoa 1 figura pada za 
+                    jedno mesto dole na svake 2,5 sekunde, kod nivoa 2 na svake 2 sekunde, a kod nivoa 3 na svakih 1,5 sekundi. Kako 
+                    igra teče, brzina padanja figura postaje sve veća (na svakih 1000 poena nivo se povećava za 1).
+                </p>
+                <h2>Kraj igre</h2>
+                <p>Do kraja igre dolazi kada više nije moguće generisati nove figure, odnosno kada je tabla većinom popunjena.</p>
+            </div>
+            <div class="col-sm-6">
+                <div>
+                    <h2 class="desno">Nivo igre</h2>
+                    <div class="slider"><input type="range" name="slider" id="slider" min = "1", max = "3", value="1"></div>
+                </div>
+                <div>
+                    <h2 class="desno">Tipovi figura</h2>
+                    <form>
+                        <input type="checkbox" name="Ifigura" id="Ifigura"><label for="Ifigura"><img class="figura" src="tetris-dodatno/Tetris_I.svg" alt=""></label>
+                        <input type="checkbox" name="Lfigura" id="Lfigura"><label for="Lfigura"><img src="tetris-dodatno/Tetris_L.svg" alt="" class="figura"></label>
+                        <input type="checkbox" name="Jfigura" id="Jfigura"><label for="Jfigura"><img src="tetris-dodatno/Tetris_J.svg" alt="" class="figura"></label>
+                        <input type="checkbox" name="Sfigura" id="Sfigura"><label for="Sfigura"><img src="tetris-dodatno/Tetris_S.svg" alt="" class="figura"></label>
+                        <input type="checkbox" name="Zfigura" id="Zfigura"><label for="Zfigura"><img src="tetris-dodatno/Tetris_Z.svg" alt="" class="figura"></label>
+                        <input type="checkbox" name="Tfigura" id="Tfigura"><label for="Tfigura"><img src="tetris-dodatno/Tetris_T.svg" alt="" class="figura"></label>
+                        <input type="checkbox" name="Ofigura" id="Ofigura"><label for="Ofigura"><img src="tetris-dodatno/Tetris_O.svg" alt="" class="figura"></label>
+                    </form>
+                    <input type="checkbox" name="all" id="all"><label for="all" id="labelAll">Selektuj sve figure</label>
+                    <p id="tipovi">Ovde birate koje tipove figura želite u svojoj igri.</p>
+                </div>
+                <div class="dugmeIgra">
+                    <button id="igra" type="button">Započnite igru</button>
+                </div>
+                <div class="dugmeRez">
+                    <button id="rez" type="button">Stranica sa rezultatima</button>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

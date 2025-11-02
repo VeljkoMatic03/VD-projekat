@@ -1,0 +1,94 @@
+h1 {
+    text-align: center;
+    font-family: tetris-font;
+    color: white;
+    font-size: 100px;
+}
+
+td, th {
+    height: 25px;
+    width: 25px;
+    background-color: #221145;
+    border-radius: 1px;
+    border-style: solid;
+    border-color: lightgray;
+    padding: 0%;
+    color: lightgray;
+    font-family: tetris-font;
+    text-align: center;
+}
+
+.next td, .next th {
+    height: 40px;
+    width: 40px;
+}
+
+.Ifigura {
+    background-color: cyan;
+}
+
+.Lfigura {
+    background-color: orange;
+}
+
+.Jfigura {
+    background-color: blue;
+}
+
+.Sfigura {
+    background-color: lime;
+}
+
+.Zfigura {
+    background-color: red;
+}
+
+.Tfigura {
+    background-color: purple;
+}
+
+.Ofigura {
+    background-color: yellow;
+}
+
+@font-face {
+    font-family: tetris-font;
+    src: url(tetris-dodatno/slkscre.ttf);
+}
+
+.next {
+    margin: auto;
+}
+
+#polje {
+    margin: auto;
+}
+
+#scorePolje, #nivoPolje{
+    display: flex;
+    padding-top: 100px;
+    font-family: tetris-font;
+    font-size: x-large;
+    color: white;
+}
+
+#score, #nivo{
+    margin: auto;
+}
+
+button {
+    display: block;
+    width: 100px;
+    height: 100px;
+    margin: 20px auto;
+    margin-left: 100px;
+    font-family: tetris-font;
+    background-color: #221145;
+    color: white;
+    border: solid white;
+}
+
+body {
+    background-color: #3F314E;
+    margin: auto;
+}
