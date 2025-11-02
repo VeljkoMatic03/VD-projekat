@@ -1,0 +1,85 @@
+body {
+    background-color: #3F314E;
+    color: lightgray;
+}
+
+hr {
+    margin-bottom: 3px;
+}
+
+p {
+    text-align: justify;
+}
+
+h2 {
+    margin-top: 5px;;
+}
+
+input[type="range"]::-webkit-slider-thumb {
+    -webkit-appearance: none;
+    appearance: none;
+    height: 15px;
+    width: 15px;
+    background-color: lightgray;
+    border-radius: 50%;
+    border: 2px solid lightgray;
+  }
+
+input[type="range"] {
+    margin: auto;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    -webkit-appearance: none;
+    appearance: none;
+    width: 50%;
+    cursor: pointer;
+    outline: none;
+    height: 2px;
+    background: lightgray;
+    border-radius: 16px;
+}
+
+h2.desno {
+    text-align: right;
+}
+
+.slider {
+    margin: auto;
+}
+
+form {
+    border: 2px solid lightgray;
+    padding-top: 2px;
+}
+
+.figura {
+    width: 100%;
+    height: 100%;
+}
+
+label {
+    width: 120px;
+}
+
+#tipovi {
+    text-align: center;
+    font-size: large;
+}
+
+button {
+    height: 50px;
+    width: 200px;
+    background-color: #3F314E;
+    display: block;
+    margin: auto;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+#labelAll {
+    width:auto;
+}
+
+h1 {
+    text-align: center;
+}
